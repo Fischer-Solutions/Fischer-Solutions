@@ -1,0 +1,374 @@
+@media (max-width: 1100px) {
+
+
+.container {
+
+    width:90%;
+
+}
+
+
+.hero h1 {
+
+    font-size:3.2rem;
+
+}
+
+
+.hero-grid {
+
+    gap:40px;
+
+}
+
+
+.footer {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+}
+
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+
+header .container {
+
+    height:75px;
+
+}
+
+
+/* Mobile Navigation */
+
+nav {
+
+    position:absolute;
+
+    top:75px;
+
+    left:0;
+
+    width:100%;
+
+    background:#020617;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:30px;
+
+    display:none;
+
+}
+
+
+nav.open {
+
+    display:flex;
+
+}
+
+
+header .button {
+
+    display:none;
+
+}
+
+
+.hero {
+
+    padding-top:130px;
+
+}
+
+
+.hero-grid {
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+
+.hero-text {
+
+    margin:auto;
+
+}
+
+
+.hero-buttons {
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+
+.browser {
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+
+.about-grid,
+.contact-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.stats .container {
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+
+.pricing-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+/* Mobile */
+
+@media (max-width:600px) {
+
+
+body {
+
+    font-size:15px;
+
+}
+
+
+.container {
+
+    width:92%;
+
+}
+
+
+section {
+
+    padding:70px 0;
+
+}
+
+
+section h2 {
+
+    font-size:2rem;
+
+    margin-bottom:35px;
+
+}
+
+
+.logo {
+
+    font-size:1.3rem;
+
+}
+
+
+/* Hero */
+
+
+.hero h1 {
+
+    font-size:2.3rem;
+
+}
+
+
+.hero-text {
+
+    font-size:1rem;
+
+}
+
+
+.hero-buttons {
+
+    flex-direction:column;
+
+}
+
+
+.hero-buttons .button {
+
+    width:100%;
+
+}
+
+
+
+/* Page Headers */
+
+
+.page-hero {
+
+    padding-top:130px;
+
+    padding-bottom:70px;
+
+}
+
+
+.page-hero h1 {
+
+    font-size:2.4rem;
+
+}
+
+
+
+/* Cards */
+
+
+.cards,
+.features,
+.steps,
+.mission-cards,
+.testimonial-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.card,
+.service-card,
+.project-card,
+.plan,
+.testimonial,
+.step {
+
+    padding:25px;
+
+}
+
+
+
+/* Browser Preview */
+
+
+.browser-content {
+
+    padding:35px 20px;
+
+}
+
+
+
+/* Forms */
+
+
+input,
+textarea,
+select {
+
+    padding:14px;
+
+}
+
+
+
+/* Footer */
+
+
+.footer {
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+
+.footer a {
+
+    justify-content:center;
+
+}
+
+
+
+/* Stats */
+
+
+.stats h2 {
+
+    font-size:2.5rem;
+
+}
+
+
+
+/* Buttons */
+
+
+.button {
+
+    padding:13px 25px;
+
+}
+
+
+}
+
+
+
+/* Small Phones */
+
+@media (max-width:400px) {
+
+
+.hero h1 {
+
+    font-size:2rem;
+
+}
+
+
+.page-hero h1 {
+
+    font-size:2rem;
+
+}
+
+
+.logo {
+
+    font-size:.95rem;
+
+}
+
+
+}
