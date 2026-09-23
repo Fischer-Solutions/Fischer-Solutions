@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 - Page Not Found | Fischer Solutions</title>
+    <meta
+        name="description"
+        content="The page you're looking for could not be found."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 120px 20px 80px;
+        }
+
+        .error-page::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(
+                    ellipse 60% 50% at 50% 35%,
+                    rgba(56, 189, 248, .13),
+                    transparent
+                ),
+                radial-gradient(
+                    ellipse 40% 50% at 20% 80%,
+                    rgba(37, 99, 235, .10),
+                    transparent
+                );
+            pointer-events: none;
+        }
+
+        .error-page::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(
+                    rgba(56, 189, 248, .04) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(56, 189, 248, .04) 1px,
+                    transparent 1px
+                );
+            background-size: 60px 60px;
+            mask-image:
+                radial-gradient(
+                    ellipse 80% 80% at 50% 50%,
+                    black 30%,
+                    transparent 80%
+                );
+            pointer-events: none;
+        }
+
+        .error-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+        }
+
+        .error-code {
+            font-size: clamp(7rem, 20vw, 12rem);
+            font-weight: 800;
+            line-height: .9;
+            letter-spacing: -.07em;
+            color: var(--text);
+            text-shadow:
+                0 0 40px rgba(56, 189, 248, .18),
+                0 0 80px rgba(56, 189, 248, .10);
+            margin-bottom: 28px;
+        }
+
+        .error-code span {
+            color: var(--primary);
+        }
+
+        .error-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .error-tag::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .error-content h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -.03em;
+            margin-bottom: 16px;
+        }
+
+        .error-content p {
+            color: var(--muted);
+            font-size: var(--fs-lg);
+            line-height: 1.8;
+            max-width: 540px;
+            margin: 0 auto;
+        }
+
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 34px;
+        }
+
+        @media (max-width: 560px) {
+            .error-page {
+                padding: 100px 20px 60px;
+            }
+
+            .error-actions {
+                flex-direction: column;
+            }
+
+            .error-actions .button {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                Fischer<span>Solutions</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="/" class="button">
+                    Home
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="error-page">
+        <div class="error-content">
+
+            <div class="error-code">
+                4<span>0</span>4
+            </div>
+
+            <div class="error-tag">
+                Page Not Found
+            </div>
+
+            <h1>Looks like you're off the map.</h1>
+
+            <p>
+                The page you're looking for doesn't exist, may have been moved,
+                or the URL may have been entered incorrectly.
+            </p>
+
+            <div class="error-actions">
+                <a href="/" class="button">
+                    Back to Home
+                </a>
+
+                <a href="/contact.html" class="button secondary">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+
+<div class="container footer">
+
+<div>
+
+<h3>Fischer Solutions</h3>
+
+<p>
+
+Professional websites for growing businesses.
+
+</p>
+
+</div>
+
+<div>
+
+<h4>Navigation</h4>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="partners.html">Partners</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div>
+
+<h4>Services</h4>
+
+<p>Web Design</p>
+<p>Website Redesign</p>
+<p>Hosting</p>
+<p>SEO</p>
+
+</div>
+
+<div>
+
+<h4>Contact</h4>
+
+<p>contact@fischersolutions.nx.kg</p>
+<p>(317) 758-8631</p>
+<p>Indiana, USA</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 Fischer Solutions. All rights reserved.
+
+</div>
+
+</footer>
+
+</body>
+</html>
