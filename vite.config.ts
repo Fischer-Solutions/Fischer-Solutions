@@ -20,5 +20,5 @@ export default defineConfig({
     },
   ],
   // The site uses a custom domain, so it is hosted from the domain root.
-  base: "/",
+  base: "./",
 });
